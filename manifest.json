@@ -1,0 +1,9 @@
+{
+  "id": "zoom-into-section-peng",
+  "name": "Zoom Into Section Peng",
+  "version": "0.2.0",
+  "minAppVersion": "1.15.1",
+  "description": "Open and navigate editable sections while keeping the original outline.",
+  "author": "Peng",
+  "isDesktopOnly": true
+}

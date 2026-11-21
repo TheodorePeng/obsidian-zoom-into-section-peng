@@ -1,0 +1,45 @@
+.zoom-into-section-peng-active > .cm-scroller > .cm-sizer > .inline-title,
+.zoom-into-section-peng-active > .cm-scroller > .cm-sizer > .iconic-title-wrapper:has(> .inline-title) {
+	display: none;
+}
+
+.zoom-into-section-peng-context {
+	display: flex;
+	align-items: center;
+	gap: var(--size-4-2);
+	min-width: 0;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding: var(--size-4-2) var(--size-4-4);
+	border-bottom: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+}
+
+.zoom-into-section-peng-context > * {
+	flex: none;
+}
+
+.zoom-into-section-peng-context > button,
+.zoom-into-section-peng-context > [aria-current] {
+	max-width: 24ch;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.zoom-into-section-peng-context > button {
+	background: transparent;
+	box-shadow: none;
+	color: var(--text-muted);
+	padding: var(--size-4-1);
+}
+
+.zoom-into-section-peng-context > button:hover,
+.zoom-into-section-peng-context > button:focus-visible {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.zoom-into-section-peng-context > [aria-current] {
+	color: var(--text-normal);
+	font-weight: var(--font-semibold);
+}

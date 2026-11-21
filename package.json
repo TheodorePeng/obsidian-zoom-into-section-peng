@@ -1,0 +1,33 @@
+{
+  "name": "obsidian-zoom-into-section-peng",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Open and navigate editable sections while keeping the original outline.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit && node esbuild.config.mjs production",
+    "lint": "eslint .",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test tests/*.test.mts"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "@lezer/markdown": "1.6.2"
+  },
+  "devDependencies": {
+    "@codemirror/language": "6.11.3",
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^22.15.17",
+    "esbuild": "0.25.5",
+    "eslint": "^9.39.4",
+    "eslint-plugin-obsidianmd": "^0.4.0",
+    "globals": "^17.6.0",
+    "jiti": "^2.6.1",
+    "obsidian": "1.13.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.59.1"
+  }
+}
